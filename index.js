@@ -28,13 +28,8 @@ app.post("/payment/create", async (req, res) => {
   }
 });
 
+app.listen(8910, (err) => {
+  if (err) throw err;
 
-app.listen(8910, (err) =>{
-    if(err) throw err
-
-  console.log(`Server running on http://localhost:8910`)
+  console.log(`Server running on http://localhost:8910`);
 });
-
-
-
-
